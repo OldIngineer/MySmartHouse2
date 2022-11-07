@@ -186,11 +186,9 @@ public class MainActivity extends AppCompatActivity
     private String[] humidityGround = new String[n]; //текущее значение влажности земли
     //---Telegram----------------------------
     //bot:@MySmartHouse2_bot
-    //public static String token = "bot_token";
-    public static String token = "1929628275:AAGuAUzKNeh_y7YfMVYIulKBMS00f3cUca4";
+    public static String token = "bot_token";
     //канал:MySmartHouse2
-    //public static String id = "chat_id";
-    public static String id = "-1001561225224";
+    public static String id = "chat_id";    
     //============================================================================================
     @Override
     //Вызывается когда Activity стартует
