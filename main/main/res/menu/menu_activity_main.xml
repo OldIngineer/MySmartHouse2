@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.vozov.mysmarthouse2.MainActivity" >
+    -->
+    <item
+        android:id="@+id/settings"
+        android:title="@string/action_settings"/>
+
+    <!-- menu group2 -->
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/com_sms"
+            android:title="Команды SMS" />
+        <item
+            android:id="@+id/sms_tel"
+            android:title="SMS телефон" />
+        <item
+            android:id="@+id/telegram"
+            android:title="Telegram" />
+        <item
+            android:id="@+id/rs_settings"
+            android:title="@string/rs_settings">
+            <!-- под/меню для настроек -->
+            <menu>
+                <item
+                    android:id="@+id/number_devices"
+                    android:title="@string/number_devices" />
+            </menu>
+        </item>
+    </group>
+    <!-- menu group3 -->
+    <!-- menu group1 -->
+    <group android:id="@+id/group1"/>
+</menu>
