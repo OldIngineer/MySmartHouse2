@@ -1282,7 +1282,7 @@ public class MainActivity extends AppCompatActivity
                     sj = sj.replace("[","");
                     sj = sj.replace("]","");
                     //если текст в сообщении присутствует, производим дальнейшую обработку
-                    if(!sj.equals("")) {
+                    if(sj!=null) {
                         JSONObject jon = new JSONObject(sj);
                         upId = jon.getString("update_id");//номер сообщения
                         JSONObject jonm = jon.getJSONObject("channel_post");//второе вложение
