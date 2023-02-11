@@ -527,7 +527,7 @@ public class MainActivity extends AppCompatActivity
        @Override//получение из активности данных вкладки
        public String[] inAttrSecurity() {
            String[] atSec = new String[4];
-           if(attrSecurity) atSec[0] = "true";else atSec[0] = "false";
+           if(attrSecurity||securityActive) atSec[0] = "true";else atSec[0] = "false";
            atSec[1] = message[0]; atSec[2] = message[1]; atSec[3] = message[2];
            return atSec;
        }
@@ -549,7 +549,7 @@ public class MainActivity extends AppCompatActivity
                    sendMessage();//отсылка сообщения
                }, WAIT_ACTIVE_SECURITY);
            }
-           if(attrSecurity&!attSec)//если выключается кнопка охраны
+           if((attrSecurit||securityActive)&!attSec)//если выключается кнопка охраны
            {
                attrSecurity = false;
                securityActive = false;
